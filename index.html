@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Instagram</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    </head>
+    <body>
+        <!--encabezado-->
+        <nav class="navbar navbar-light sticky-top bg-light">
+        <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <ul class="nav ">
+                <li class="nav-item">
+                    <button type="button" class="btn btn-primary btn-md btn-success"data-toggle="modal" data-target="#exampleModal">Create a new post</button>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-gear"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Log Out</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        
+        <!-- boton 1 accion -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-body ">
+                  <textarea class="form-control" aria-label="With textarea"></textarea>
+                  <button type="button" class="fa-solid fa-camera p-1 border rounded mt-1" ></button>
+                  <button type="button" class="fa-solid fa-location-dot p-1 border rounded mt-1" ></button>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-success btn-sm">Publish</button>
+              </div>
+            </div>
+          </div>
+        </div> 
+        
+        <!--botones cambiar paneles-->    
+        <div class="container-fluid ">
+          <!-- Nav pills -->
+            <ul class="nav nav-pills justify-content-center mt-4" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#menu2"><i class="fa-solid fa-table-cells-large" style=color:#495057 aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#home"><i class="fa-regular fa-square" style=color:#495057  aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            
+              <!-- Tab principal -->
+              <div class="tab-content">
+                <div id="home" class="container-fluid tab-pane active ">
+                    <div class="row justify-content-center">
+                        <div class="">
+                            <!--post 1-->
+                            <div class="card mx-auto custom-card" id="prova">
+                                <div class="row post-header col-12 py-2 px-3">
+                                    <div class="col-6 float-left "><h4>My First post</h4></div>
+                                    <div class="col-6 float-right text-right post-number"><h4>16/05/24</h4></div>
+                                </div>
+                                <!--medio-->
+                                <img class="card-img img-fluid" src="https://i.pinimg.com/564x/a1/1b/fc/a11bfc597ce511f46abf2fed92457d51.jpg" alt="Card image cap">
+                                <!--final-->
+                                <div class="row post-header px-4 py-3 pb-3">
+                                    <div class="col-0.1 float-left font-size:25px text-left"><i class="far fa-heart fa-2x"></i></div>
+                                    <div class="col-0.1 float-left font-size:25px text-left"><i class="fa-regular fa-comment fa-2x"></i></div>
+                                    <div class="col-0.1 float-left font-size:25px text-left"><i class="fa-regular fa-paper-plane fa-2x"></i></div>
+                                    <div class="col-9 float-right font-size:25px text-right"><i class="fa-regular fa-bookmark fa-2x"></i></div>
+                                    
+                                </div>
+                                <div class="card-body px-3 py-2">
+                                    <h5 class="card-title">1000 Likes</h5>
+                                    <p class="card-text">No podía faltar una visita a la Torre Eiffel.</p>
+                                </div>
+                                        
+                            </div>
+                            
+                            <!--post 2-->
+                            <div class="card mx-auto custom-card mt-3" id="prova">
+                                <div class="row post-header col-12 py-2 px-3">
+                                    <div class="col-6 float-left "><h4>My Second post</h4></div>
+                                    <div class="col-6 float-right text-right post-number"><h4>16/05/24</h4></div>
+                                </div>
+                                <!--medio-->
+                                <img class="card-img img-fluid" src="https://i.pinimg.com/564x/5e/f8/86/5ef88697cfde282f18e76f832827d5da.jpg" alt="Card image cap">
+                                <!--final-->
+                                <div class="row post-header px-4 py-3 pb-3">
+                                    <div class="col-0.6 float-left font-size:25px text-left"><i class="far fa-heart fa-2x"></i></div>
+                                    <div class="col-0.6 float-left font-size:25px text-left"><i class="fa-regular fa-comment fa-2x"></i></div>
+                                    <div class="col-0.6 float-left font-size:25px text-left"><i class="fa-regular fa-paper-plane fa-2x"></i></div>
+                                    <div class="col-9 float-right font-size:25px text-right"><i class="fa-regular fa-bookmark fa-2x"></i></div>
+                                    
+                                </div>
+                                <div class="card-body px-3 py-2">
+                                    <h5 class="card-title">1000 Likes</h5>
+                                    <p class="card-text">This is is an example of a very good photo that you can post on ig.</p>
+                                </div>
+                                       
+                            </div>
+
+                            <!--post 3-->
+                            <div class="card mx-auto custom-card mt-3" id="prova">
+                                <div class="row post-header col-12 py-2 px-3">
+                                    <div class="col-6 float-left "><h4>My Third post</h4></div>
+                                    <div class="col-6 float-right text-right post-number"><h4>16/05/24</h4></div>
+                                </div>
+                                <!--medio-->
+                                <img class="card-img img-fluid" src="https://i.pinimg.com/564x/d2/4f/d1/d24fd1cc6df9bc3f05c56294138de243.jpg" alt="Card image cap">
+                                <!--final-->
+                                <div class="row post-header px-4 py-3 pb-3">
+                                    <div class="col-0.6 float-left font-size:25px text-left"><i class="far fa-heart fa-2x"></i></div>
+                                    <div class="col-0.6 float-left font-size:25px text-left"><i class="fa-regular fa-comment fa-2x"></i></div>
+                                    <div class="col-0.6 float-left font-size:25px text-left"><i class="fa-regular fa-paper-plane fa-2x"></i></div>
+                                    <div class="col-9 float-right font-size:25px text-right"><i class="fa-regular fa-bookmark fa-2x"></i></div>
+                                    
+                                </div>
+                                <div class="card-body px-3 py-2">
+                                    <h5 class="card-title">1000 Likes</h5>
+                                    <p class="card-text">This is is an example of a very good photo that you can post on ig.</p>
+                                </div>
+                                       
+                            </div>
+
+                            <!--post 4-->
+                            <div class="card mx-auto custom-card mt-3" id="prova">
+                                <div class="row post-header col-12 py-2 px-3">
+                                    <div class="col-6 float-left "><h4>My Fourth post</h4></div>
+                                    <div class="col-6 float-right text-right post-number"><h4>16/05/24</h4></div>
+                                </div>
+                                <!--medio-->
+                                <img class="card-img img-fluid" src="https://i.pinimg.com/564x/bf/d3/56/bfd3566b9d6a259ed9f5eae153cbb6b0.jpg" alt="Card image cap">
+                                <!--final-->
+                                <div class="row post-header px-4 py-3 pb-3">
+                                    <div class="col-0.6 float-left font-size:25px text-left"><i class="far fa-heart fa-2x"></i></div>
+                                    <div class="col-0.6 float-left font-size:25px text-left"><i class="fa-regular fa-comment fa-2x"></i></div>
+                                    <div class="col-0.6 float-left font-size:25px text-left"><i class="fa-regular fa-paper-plane fa-2x"></i></div>
+                                    <div class="col-9 float-right font-size:25px text-right"><i class="fa-regular fa-bookmark fa-2x"></i></div>
+                                    
+                                </div>
+                                <div class="card-body px-3 py-2">
+                                    <h5 class="card-title">1000 Likes</h5>
+                                    <p class="card-text">This is is an example of a very good photo that you can post on ig.</p>
+                                </div>
+                                       
+                            </div>
+
+                            <!--post 5-->
+
+                            <div class="card mx-auto custom-card mt-3" id="prova">
+                                <div class="row post-header col-12 py-2 px-3">
+                                    <div class="col-6 float-left "><h4>My Fifth post</h4></div>
+                                    <div class="col-6 float-right text-right post-number"><h4>16/05/24</h4></div>
+                                </div>
+                                <!--medio-->
+                                <img class="card-img img-fluid" src="https://i.pinimg.com/564x/90/26/0a/90260a8d60fad8be16f7661859db6969.jpg" alt="Card image cap">
+                                <!--final-->
+                                <div class="row post-header px-4 py-3 pb-3">
+                                    <div class="col-0.6 float-left font-size:25px text-left"><i class="far fa-heart fa-2x"></i></div>
+                                    <div class="col-0.6 float-left font-size:25px text-left"><i class="fa-regular fa-comment fa-2x"></i></div>
+                                    <div class="col-0.6 float-left font-size:25px text-left"><i class="fa-regular fa-paper-plane fa-2x"></i></div>
+                                    <div class="col-9 float-right font-size:25px text-right"><i class="fa-regular fa-bookmark fa-2x"></i></div>
+                                    
+                                </div>
+                                <div class="card-body px-3 py-2">
+                                    <h5 class="card-title">1000 Likes</h5>
+                                    <p class="card-text">This is is an example of a very good photo that you can post on ig.</p>
+                                </div>
+                                       
+                            </div>
+
+                            <!--post 6-->
+                            <div class="card mx-auto custom-card mt-3" id="prova">
+                                <div class="row post-header col-12 py-2 px-3">
+                                    <div class="col-6 float-left "><h4>My Sixth post</h4></div>
+                                    <div class="col-6 float-right text-right post-number"><h4>16/05/24</h4></div>
+                                </div>
+                                <!--medio-->
+                                <img class="card-img img-fluid" src="https://i.pinimg.com/564x/ef/30/68/ef30681f4b052be176744bcfd5d7a1fe.jpg" alt="Card image cap">
+                                <!--final-->
+                                <div class="row post-header px-4 py-3 pb-3">
+                                    <div class="col-0.6 float-left font-size:25px text-left"><i class="far fa-heart fa-2x"></i></div>
+                                    <div class="col-0.6 float-left font-size:25px text-left"><i class="fa-regular fa-comment fa-2x"></i></div>
+                                    <div class="col-0.6 float-left font-size:25px text-left"><i class="fa-regular fa-paper-plane fa-2x"></i></div>
+                                    <div class="col-9 float-right font-size:25px text-right"><i class="fa-regular fa-bookmark fa-2x"></i></div>
+                                    
+                                </div>
+                                <div class="card-body px-3 py-2">
+                                    <h5 class="card-title">1000 Likes</h5>
+                                    <p class="card-text">This is is an example of a very good photo that you can post on ig.</p>
+                                </div>
+                                       
+                            </div>
+
+                            <!--post 7-->
+                            <div class="card mx-auto custom-card mt-3" id="prova">
+                                <div class="row post-header col-12 py-2 px-3">
+                                    <div class="col-6 float-left "><h4>My Seventh post</h4></div>
+                                    <div class="col-6 float-right text-right post-number"><h4>16/05/24</h4></div>
+                                </div>
+                                <!--medio-->
+                                <img class="card-img img-fluid" src="https://i.pinimg.com/564x/f7/f6/ad/f7f6ad137ec78c0ade0a6b7d7bdae29c.jpg" alt="Card image cap">
+                                <!--final-->
+                                <div class="row post-header px-4 py-3 pb-3">
+                                    <div class="col-0.6 float-left font-size:25px text-left"><i class="far fa-heart fa-2x"></i></div>
+                                    <div class="col-0.6 float-left font-size:25px text-left"><i class="fa-regular fa-comment fa-2x"></i></div>
+                                    <div class="col-0.6 float-left font-size:25px text-left"><i class="fa-regular fa-paper-plane fa-2x"></i></div>
+                                    <div class="col-9 float-right font-size:25px text-right"><i class="fa-regular fa-bookmark fa-2x"></i></div>
+                                    
+                                </div>
+                                <div class="card-body px-3 py-2">
+                                    <h5 class="card-title">1000 Likes</h5>
+                                    <p class="card-text">This is is an example of a very good photo that you can post on ig.</p>
+                                </div>
+                                       
+                            </div>
+
+                            <!--post 8-->
+                            <div class="card mx-auto custom-card mt-3" id="prova">
+                                <div class="row post-header col-12 py-2 px-3">
+                                    <div class="col-6 float-left "><h4>My Eight post</h4></div>
+                                    <div class="col-6 float-right text-right post-number"><h4>16/05/24</h4></div>
+                                </div>
+                                <!--medio-->
+                                <img class="card-img img-fluid" src="https://i.pinimg.com/564x/67/a7/2b/67a72b927cbebffe57a5d2230895905c.jpg" alt="Card image cap">
+                                <!--final-->
+                                <div class="row post-header px-4 py-3 pb-3">
+                                    <div class="col-0.6 float-left font-size:25px text-left"><i class="far fa-heart fa-2x"></i></div>
+                                    <div class="col-0.6 float-left font-size:25px text-left"><i class="fa-regular fa-comment fa-2x"></i></div>
+                                    <div class="col-0.6 float-left font-size:25px text-left"><i class="fa-regular fa-paper-plane fa-2x"></i></div>
+                                    <div class="col-9 float-right font-size:25px text-right"><i class="fa-regular fa-bookmark fa-2x"></i></div>
+                                    
+                                </div>
+                                <div class="card-body px-3 py-2">
+                                    <h5 class="card-title">1000 Likes</h5>
+                                    <p class="card-text">This is is an example of a very good photo that you can post on ig.</p>
+                                </div>
+                                       
+                            </div>
+
+                            <!--post 9-->
+                            <div class="card mx-auto custom-card mt-3" id="prova">
+                                <div class="row post-header col-12 py-2 px-3">
+                                    <div class="col-6 float-left "><h4>My Nineth post</h4></div>
+                                    <div class="col-6 float-right text-right 16/05/24"><h4>16/05/24</h4></div>
+                                </div>
+                                <!--medio-->
+                                <img class="card-img img-fluid" src="https://i.pinimg.com/564x/7d/f9/92/7df99282a38260fe29231ce4f7ae8de1.jpg" alt="Card image cap">
+                                <!--final-->
+                                <div class="row post-header px-4 py-3 pb-3">
+                                    <div class="col-0.6 float-left font-size:25px text-left"><i class="far fa-heart fa-2x"></i></div>
+                                    <div class="col-0.6 float-left font-size:25px text-left"><i class="fa-regular fa-comment fa-2x"></i></div>
+                                    <div class="col-0.6 float-left font-size:25px text-left"><i class="fa-regular fa-paper-plane fa-2x"></i></div>
+                                    <div class="col-9 float-right font-size:25px text-right"><i class="fa-regular fa-bookmark fa-2x"></i></div>
+                                    
+                                </div>
+                                <div class="card-body px-3 py-2">
+                                    <h5 class="card-title">5000 Likes</h5>
+                                    <p class="card-text">El mejor perfume de la vida, muy recomendado comprarlo.</p>
+                                </div>
+                                       
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <!--post multile-->
+                <div id="menu2" class="container-fluid tab-pane fade"><br>
+                    <div class="row ">
+                        <div class="col-md-4 col-sm-6 px-1 my-1 ">
+                            <img src="https://i.pinimg.com/564x/a1/1b/fc/a11bfc597ce511f46abf2fed92457d51.jpg" alt="Card image cap" width="100%" height="350px">
+                        </div>
+                        <div class="col-md-4 col-sm-6 px-1 my-1 ">
+                            <img src="https://i.pinimg.com/564x/5e/f8/86/5ef88697cfde282f18e76f832827d5da.jpg" alt="Card image cap" width="100%" height="350px">
+                        </div>
+                        <div class="col-md-4 col-sm-6 px-1 my-1 ">
+                            <img src="https://i.pinimg.com/564x/d2/4f/d1/d24fd1cc6df9bc3f05c56294138de243.jpg" alt="Card image cap" width="100%" height="350px">
+                        </div>
+                        <div class="col-md-4 col-sm-6 px-1 my-1 ">
+                            <img src="https://i.pinimg.com/564x/bf/d3/56/bfd3566b9d6a259ed9f5eae153cbb6b0.jpg" alt="Card image cap" width="100%" height="350px">
+                        </div>
+                        <div class="col-md-4 col-sm-6 px-1 my-1">
+                            <img src="https://i.pinimg.com/564x/90/26/0a/90260a8d60fad8be16f7661859db6969.jpg" alt="Card image cap" width="100%" height="350px">
+                        </div>
+                        <div class="col-md-4 col-sm-6 px-1 my-1">
+                            <img src="https://i.pinimg.com/564x/ef/30/68/ef30681f4b052be176744bcfd5d7a1fe.jpg" alt="Card image cap" width="100%" height="350px">
+                        </div>
+                        <div class="col-md-4 col-sm-6 px-1 my-1">
+                            <img src="https://i.pinimg.com/564x/f7/f6/ad/f7f6ad137ec78c0ade0a6b7d7bdae29c.jpg" alt="Card image cap" width="100%" height="350px">
+                        </div>
+                        <div class="col-md-4 col-sm-6 px-1 my-1">
+                            <img src="https://i.pinimg.com/564x/67/a7/2b/67a72b927cbebffe57a5d2230895905c.jpg" alt="Card image cap" width="100%" height="350px">
+                        </div>
+                        <div class="col-md-4 col-sm-6 px-1 my-1">
+                            <img src="https://i.pinimg.com/564x/7d/f9/92/7df99282a38260fe29231ce4f7ae8de1.jpg" alt="Card image cap" width="100%" height="350px">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
+
